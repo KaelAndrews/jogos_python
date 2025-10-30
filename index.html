@@ -19,9 +19,9 @@
             <div class="jogos-grid">
                 <!-- Jogos serão adicionados aqui dinamicamente ou manualmente -->
                 <div class="jogo-card">
-                    <h3>Jogo Exemplo</h3>
-                    <p>Descrição breve do jogo.</p>
-                    <button class="btn-jogar" onclick="carregarJogo('exemplo')">Jogar</button>
+                    <h3>Jogo do Dado</h3>
+                    <p>Lance um dado virtual e veja o resultado aleatório!</p>
+                    <button class="btn-jogar" onclick="carregarJogo('dado')">Jogar</button>
                 </div>
                 <!-- Mais jogos podem ser adicionados aqui -->
             </div>
@@ -31,6 +31,9 @@
             <h2 id="titulo-jogo"></h2>
             <div id="canvas-container">
                 <!-- Aqui será carregado o jogo em Python via Pyodide -->
+            </div>
+            <div id="controles-jogo" style="display: none;">
+                <button class="btn-jogar" id="btn-jogar-novamente">Jogar Novamente</button>
             </div>
             <button class="btn-voltar" onclick="voltarParaLista()">Voltar</button>
         </section>
