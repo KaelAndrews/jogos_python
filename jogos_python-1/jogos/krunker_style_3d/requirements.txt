@@ -1,0 +1,8 @@
+pygame
+numpy
+pyopengl
+pyglet
+pillow
+scipy
+requests
+matplotlib

@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(90deg, #ff4b1f, #ff416c);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.jogo-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.jogo-card:hover {
+    transform: scale(1.05);
+}
+
+.btn-jogar {
+    background-color: #ff4b1f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-jogar:hover {
+    background-color: #ff416c;
+}
+
+.btn-voltar {
+    background-color: #555;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

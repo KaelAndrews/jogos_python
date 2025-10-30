@@ -1,0 +1,29 @@
+# filepath: c:\Users\Administrator\Documents\GitHub\jogos_python\jogos_python\jogos\krunker_style_3d\tools\model_exporters\exporter.py
+
+class ModelExporter:
+    def __init__(self, model):
+        self.model = model
+
+    def export_to_format(self, format_type):
+        if format_type == 'obj':
+            return self.export_to_obj()
+        elif format_type == 'fbx':
+            return self.export_to_fbx()
+        else:
+            raise ValueError("Unsupported format type")
+
+    def export_to_obj(self):
+        # Logic to export the model to OBJ format
+        obj_data = f"Exporting {self.model} to OBJ format."
+        return obj_data
+
+    def export_to_fbx(self):
+        # Logic to export the model to FBX format
+        fbx_data = f"Exporting {self.model} to FBX format."
+        return fbx_data
+
+# Example usage
+if __name__ == "__main__":
+    exporter = ModelExporter("character_model")
+    print(exporter.export_to_format('obj'))
+    print(exporter.export_to_format('fbx'))
